@@ -1,0 +1,77 @@
+git intit manual2
+cd manual2
+
+
+
+머지 시 충돌할 경우 같은 라인에 다른 내용이 있어서 그런가?
+cat >
+git reset 혜쉬 붙여넣기
+리셋했을 때 s1 커밋을 했는데 왜 스테이지에 있는 건지?
+init이랑 mkdir 의 차이점??
+병합-분기를 할 때 어떻게 분기 되는 지??
+
+
+git remote add server 링크
+
+git merge 병합
+git pull -u server main??
+git push -u server main
+git remote -v 목록보임
+git push -u origin main
+git remote add origin 링크복붙하면
+커밋 후  git push origin main 입력하면 깃허브에 업로드됨 
+
+
+서버와 로컬의 내용이 다르다면 pull을 먼저 진행
+
+1. 서버생성
+2. 처음 반장이 push
+3. pull로 끌어옴
+
+ssh 원격접속
+privite key 내pc
+public key 서버
+일치하면 열어줌
+ssh-keygen 키생성
+
+--ssh 원격접속
+원격서버등록하기
+git remote add origin-ssh git@github.com:choionyu/test-ssh.git
+git remote -v 접속여부확인
+
+-서버에 자료올리기
+git push 서버명 브렌치명
+
+-서버에서 자료 다운 받기
+git pull 서버명 브렌치명
+
+
+--ssh로 접속하기
+ssh-keygen실행 -> 홈디렉토리에서
+cd .ssh
+cat id_rsa.pub 실행 후 내용복사
+깃허브에 url->code ssh 주소복사
+ git remote add 서버명 url주
+git remote -v 접속여부확인
+
+-서버에 자료 올리기
+git push 서버명 브렌치명
+
+-서버에서 자료 다운받기
+git pull 서버명 브렌치명
+
+
+clone 서버에 올려놓은 디렉토리를 처음 가져올 때 사용한다
+
+
+cd ~
+cd test
+git remote add origin-sshgit@github.com:choionyu/test-ssh.git
+git remote -v
+git push origin-ssh main
+
+
+--서버에 repository 생성 -> manual
+--local의 manual 의 자료를 서버에 push
+--서버의 자료를 한꺼번에 복제 : clone 로컬의 디렉토리는 manual_home
+--

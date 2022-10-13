@@ -1,0 +1,5 @@
+맥북에서 쓰기 좋은 터미널 : iterm2
+윈도우에서 쓰기 좋은 터미널 : cmder(git)을 따로 설치할 필요없음)
+
+git config --list : 모든 설정확인
+git config --global -e : 터미널에서도 확인가능
